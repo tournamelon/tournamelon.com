@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tournamelon</title>
+  <meta name="description" content="Tournamelon Arbiter: an offline-first desktop app for chess tournaments, plus two free command-line tools." data-en="Tournamelon Arbiter: an offline-first desktop app for chess tournaments, plus two free command-line tools." data-zh="Tournamelon Arbiter：离线优先的国际象棋赛事桌面软件，并提供两款免费命令行工具。">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="brand" href="#top">Tournamelon</a>
+    <button type="button" class="lang-toggle" id="lang-toggle">中文</button>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <h1>Tournamelon Arbiter</h1>
+      <p class="lead" data-en="An offline-first desktop app for running chess tournaments, with two free command-line tools for checking and testing pairings." data-zh="离线优先的国际象棋赛事桌面软件，并附带两款用于检查和测试配对的免费命令行工具。">An offline-first desktop app for running chess tournaments, with two free command-line tools for checking and testing pairings.</p>
+      <div class="actions">
+        <!-- RELEASES_URL: change this link if the release location moves -->
+        <a class="btn primary" href="https://github.com/tournamelon/thp-tools/releases" data-en="Download PTC/RTG" data-zh="下载 PTC/RTG">Download PTC/RTG</a>
+        <a class="btn" href="#status" data-en="Read the status" data-zh="查看项目状态">Read the status</a>
+      </div>
+      <p class="note" data-en="Desktop builds: coming soon" data-zh="桌面版：即将推出">Desktop builds: coming soon</p>
+    </section>
+
+    <section class="features" aria-labelledby="features-title">
+      <h2 id="features-title" data-en="Features" data-zh="主要功能">Features</h2>
+      <ul class="feature-list">
+        <li>
+          <h3 data-en="Dutch System, 2026 rules" data-zh="荷兰制，2026 规则">Dutch System, 2026 rules</h3>
+          <p data-en="Individual Swiss tournaments under the FIDE Dutch System, with Baku acceleration." data-zh="按 FIDE 荷兰制进行个人瑞士制比赛，支持 Baku 加速。">Individual Swiss tournaments under the FIDE Dutch System, with Baku acceleration.</p>
+        </li>
+        <li>
+          <h3 data-en="FIDE 2026 tie-breaks" data-zh="FIDE 2026 破同分">FIDE 2026 tie-breaks</h3>
+          <p data-en="Tie-breaks calculated under the FIDE 2026 rules (MTB26)." data-zh="按 FIDE 2026 规则计算破同分（MTB26）。">Tie-breaks calculated under the FIDE 2026 rules (MTB26).</p>
+        </li>
+        <li>
+          <h3 data-en="TRF-2026 import and export" data-zh="TRF-2026 导入与导出">TRF-2026 import and export</h3>
+          <p data-en="Read and write tournament files in the TRF-2026 format." data-zh="以 TRF-2026 格式读取和写入赛事文件。">Read and write tournament files in the TRF-2026 format.</p>
+        </li>
+        <li>
+          <h3 data-en="Continue from another program" data-zh="接续其他程序的赛事">Continue from another program</h3>
+          <p data-en="Continue a tournament from another program's TRF file, after an independent replay check." data-zh="在独立重放校验之后，接续其他程序导出的 TRF 文件继续比赛。">Continue a tournament from another program's TRF file, after an independent replay check.</p>
+        </li>
+        <li>
+          <h3 data-en="Offline, bilingual" data-zh="离线使用，中英双语">Offline, bilingual</h3>
+          <p data-en="Works offline. The interface is available in Chinese and English." data-zh="可离线使用，界面提供中文和英文。">Works offline. The interface is available in Chinese and English.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="tools" aria-labelledby="tools-title">
+      <h2 id="tools-title" data-en="Free tools" data-zh="免费工具">Free tools</h2>
+      <div class="tool-grid">
+        <article class="card">
+          <h3>PTC <span class="tag" data-en="tournamelon-ptc" data-zh="tournamelon-ptc">tournamelon-ptc</span></h3>
+          <p data-en="A pairings checker. It replays a TRF file and verifies pairings and standings." data-zh="配对检查工具。重放 TRF 文件，并核对配对与名次。">A pairings checker. It replays a TRF file and verifies pairings and standings.</p>
+          <pre><code>tournamelon-ptc --help</code></pre>
+        </article>
+        <article class="card">
+          <h3>RTG <span class="tag" data-en="tournamelon-rtg" data-zh="tournamelon-rtg">tournamelon-rtg</span></h3>
+          <p data-en="A random tournament generator for testing pairing engines." data-zh="随机赛事生成器，用于测试配对引擎。">A random tournament generator for testing pairing engines.</p>
+          <pre><code>tournamelon-rtg --help</code></pre>
+        </article>
+      </div>
+      <p class="center"><a class="btn primary" href="https://github.com/tournamelon/thp-tools/releases" data-en="Download PTC/RTG" data-zh="下载 PTC/RTG">Download PTC/RTG</a></p>
+    </section>
+
+    <section class="status" id="status" aria-labelledby="status-title">
+      <h2 id="status-title" data-en="Status" data-zh="项目状态">Status</h2>
+      <p data-en="Tournamelon Arbiter is preparing an application for the FIDE Technical Commission's endorsement process (THP). It is not FIDE-endorsed. Current builds are development builds." data-zh="Tournamelon Arbiter 正在为 FIDE 技术委员会的背书流程（THP）准备申请。它不是 FIDE 背书的产品。当前版本均为开发版。">Tournamelon Arbiter is preparing an application for the FIDE Technical Commission's endorsement process (THP). It is not FIDE-endorsed. Current builds are development builds.</p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Tournamelon · <a href="https://github.com/tournamelon/thp-tools/blob/main/LICENSE.md" data-en="PTC/RTG licence" data-zh="PTC/RTG 许可">PTC/RTG licence</a></p>
+    <p data-en="Contact: [contact email]" data-zh="联系方式：[contact email]">Contact: [contact email]</p>
+  </footer>
+
+  <script>
+    (function () {
+      var KEY = "tm-lang";
+      var toggle = document.getElementById("lang-toggle");
+
+      function readStored() {
+        try { return localStorage.getItem(KEY); } catch (e) { return null; }
+      }
+      function writeStored(v) {
+        try { localStorage.setItem(KEY, v); } catch (e) { /* storage unavailable */ }
+      }
+      function defaultLang() {
+        var nav = (navigator.language || "en").toLowerCase();
+        return nav.indexOf("zh") === 0 ? "zh" : "en";
+      }
+      function apply(lang) {
+        document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+        var els = document.querySelectorAll("[data-en]");
+        for (var i = 0; i < els.length; i++) {
+          var text = els[i].getAttribute("data-" + lang);
+          if (text !== null) {
+            if (els[i].tagName === "META") {
+              els[i].setAttribute("content", text);
+            } else {
+              els[i].textContent = text;
+            }
+          }
+        }
+        document.title = lang === "zh" ? "Tournamelon 赛事工具" : "Tournamelon";
+        toggle.textContent = lang === "zh" ? "English" : "中文";
+        toggle.setAttribute("data-lang", lang);
+      }
+
+      var current = readStored();
+      if (current !== "zh" && current !== "en") current = defaultLang();
+      apply(current);
+
+      toggle.addEventListener("click", function () {
+        var next = toggle.getAttribute("data-lang") === "zh" ? "en" : "zh";
+        writeStored(next);
+        apply(next);
+      });
+    })();
+  </script>
+</body>
+</html>
